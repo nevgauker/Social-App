@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostContinueViewController" customModule="Social_App" customModuleProvider="target">
+            <connections>
+                <outlet property="posttextView" destination="5DC-61-Q5A" id="6Fh-sU-Y8V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqm-ib-Edh">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue the story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7R-fF-6yy">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="Bm2-x3-nQN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-61-Q5A">
+                            <rect key="frame" x="0.0" y="40" width="200" height="160"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="gCi-Tj-NFm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="pXn-eI-iPm"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5DC-61-Q5A" secondAttribute="bottom" id="0VC-qq-eMZ"/>
+                        <constraint firstAttribute="trailing" secondItem="5DC-61-Q5A" secondAttribute="trailing" id="1Tr-SM-xkF"/>
+                        <constraint firstAttribute="bottom" secondItem="5DC-61-Q5A" secondAttribute="bottom" id="AE1-2K-MSR"/>
+                        <constraint firstItem="5DC-61-Q5A" firstAttribute="leading" secondItem="bqm-ib-Edh" secondAttribute="leading" id="Aux-Ea-Gwc"/>
+                        <constraint firstItem="5DC-61-Q5A" firstAttribute="top" secondItem="y7R-fF-6yy" secondAttribute="bottom" constant="8" id="Mrw-CB-dea"/>
+                        <constraint firstItem="y7R-fF-6yy" firstAttribute="leading" secondItem="bqm-ib-Edh" secondAttribute="leading" id="ZGn-YQ-ESe"/>
+                        <constraint firstItem="5DC-61-Q5A" firstAttribute="leading" secondItem="bqm-ib-Edh" secondAttribute="leading" id="fAB-f6-Zpp"/>
+                        <constraint firstAttribute="trailing" secondItem="y7R-fF-6yy" secondAttribute="trailing" id="gTa-Uk-9Ku"/>
+                        <constraint firstItem="y7R-fF-6yy" firstAttribute="top" secondItem="bqm-ib-Edh" secondAttribute="top" id="hcr-OE-Mhn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bqm-ib-Edh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5ev-KD-I8T"/>
+                <constraint firstItem="bqm-ib-Edh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="VKV-UW-9sz"/>
+                <constraint firstItem="bqm-ib-Edh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pBk-yD-CAD"/>
+                <constraint firstItem="bqm-ib-Edh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x5j-HO-ymI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
